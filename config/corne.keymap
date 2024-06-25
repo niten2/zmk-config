@@ -9,11 +9,11 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define DEF 0
-#define LWR 2
-#define RSE 3
-#define ADJ 4
+#define LWR 1
+#define ADJ 2
 
 &lt { quick_tap_ms = <200>; };
+
 &mt { quick_tap_ms = <200>; };
 
 / {
@@ -39,10 +39,10 @@
 
         default_layer {
             bindings = <
-&kp ESC        &kp Q  &kp W  &kp E     &kp R         &kp T          &kp Y        &kp U     &kp I          &kp O    &kp P     &kp LBKT
-&mt LSHFT TAB  &kp A  &kp S  &kp D     &kp F         &kp G          &kp H        &kp J     &kp K          &kp L    &kp SEMI  &mt RIGHT_SHIFT SQT
-&kp LCTRL      &kp Z  &kp X  &kp C     &kp V         &kp B          &kp N        &kp M     &kp COMMA      &kp DOT  &kp FSLH  &mt RCTRL RBKT
-                             &kp LALT  &kp LEFT_GUI  &lt 1 SPACE    &lt 1 ENTER  &kp BSPC  &kp RIGHT_ALT
+&kp ESC        &kp Q  &kp W  &kp E     &kp R         &kp T            &kp Y          &kp U     &kp I          &kp O    &kp P     &kp LBKT
+&mt LSHFT TAB  &kp A  &kp S  &kp D     &kp F         &kp G            &kp H          &kp J     &kp K          &kp L    &kp SEMI  &mt RIGHT_SHIFT SQT
+&kp LCTRL      &kp Z  &kp X  &kp C     &kp V         &kp B            &kp N          &kp M     &kp COMMA      &kp DOT  &kp FSLH  &mt RCTRL RBKT
+                             &kp LALT  &kp LEFT_GUI  &lt LWR SPACE    &lt LWR ENTER  &kp BSPC  &kp RIGHT_ALT
             >;
         };
 
@@ -51,7 +51,7 @@
 &kp GRAVE     &kp N1    &kp N2       &kp N3        &kp N4          &kp N5              &kp N6             &kp N7           &kp N8           &kp N9          &kp N0         &trans
 &kp CAPSLOCK  &kp EXCL  &kp AT       &kp HASH      &kp DLLR        &kp PRCNT           &kp CARET          &kp AMPS         &kp KP_MULTIPLY  &kp LPAR        &kp RPAR       &trans
 &kp LCTRL     &trans    &kp KP_PLUS  &kp KP_MINUS  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp KP_EQUAL     &kp UNDERSCORE  &kp BACKSLASH  &trans
-                                     &trans        &trans          &mo ADJUST          &trans             &trans           &trans
+                                     &kp LALT      &kp LGUI        &lt LWR SPACE       &lt LWR ENTER      &kp BSPC         &kp RIGHT_ALT
             >;
         };
 
