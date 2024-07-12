@@ -21,7 +21,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        raise {
+            bindings = <&to 2>;
+            key-positions = <37 38 36>;
+        };
+    };
 };
 
 / {
