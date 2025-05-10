@@ -1,8 +1,8 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
+#include <behaviors.dtsi>
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define DEFAULT_L 0
 #define SYMBOLS_L 1
@@ -20,40 +20,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-    };
-
-    keymap {
-        compatible = "zmk,keymap";
-
-        default_layer {
-            bindings = <
-&none  &kp Q           &kp W           &kp E             &kp R        &kp T          &kp Y        &kp U        &kp I              &kp O            &kp P               &kp LBKT
-&none  &mt A LEFT_GUI  &mt S LEFT_ALT  &mt D LEFT_SHIFT  &mt F LCTRL  &kp G          &kp H        &mt J RCTRL  &mt K RIGHT_SHIFT  &mt L RIGHT_ALT  &mt SEMI RIGHT_GUI  &kp SQT
-&none  &kp Z           &kp X           &kp C             &kp V        &kp B          &kp N        &kp M        &none              &none            &kp FSLH            &kp RBKT
-                                       &lt 3 TAB         &lt 2 ESC    &lt 1 SPACE    &lt 0 ENTER  &kp BSPC     &sl 0
-            >;
-        };
-
-        next_layer {
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
-#include <behaviors.dtsi>
-
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-
-#define DEFAULT_L 0
-#define SYMBOLS_L 1
-#define ARROWS_L  2
-#define NUMBERS_L 3
-
-/ {
-    behaviors {
     };
 
     keymap {
