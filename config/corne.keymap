@@ -1,6 +1,4 @@
 #include <behaviors.dtsi>
-
-#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
@@ -28,7 +26,7 @@
         default_layer {
             bindings = <
 &none  &kp Q           &kp W           &kp E             &kp R        &kp T          &kp Y        &kp U        &kp I              &kp O            &kp P               &kp LEFT_BRACKET
-&none  &hm A LEFT_GUI  &hm S LEFT_ALT  &hm D LEFT_SHIFT  &hm F LCTRL  &kp G          &kp H        &hm J RCTRL  &hm K RIGHT_SHIFT  &hm L RIGHT_ALT  &hm SEMI RIGHT_GUI  &kp SQT
+&none  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G          &kp H        &hm RCTRL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI  &kp SQT
 &none  &kp Z           &kp X           &kp C             &kp V        &kp B          &kp N        &kp M        &kp COMMA          &kp DOT          &kp FSLH            &kp RIGHT_BRACKET
                                        &kp TAB           &lt 2 ESC    &lt 1 SPACE    &lt 1 ENTER  &kp BSPC     &none
             >;
