@@ -35,7 +35,7 @@
 
         number_layer {
             bindings = <
-&none   &kp CARET  &kp AMPS     &kp KP_MULTIPLY  &kp PRCNT  &kp LBKT          &kp RBKT         &kp N7     &kp N8     &kp N9        &kp SQT        &none
+&none   &kp CARET  &kp AMPS     &kp KP_MULTIPLY  &kp PRCNT  &kp LBKT          &kp RBKT         &kp N7     &kp N8     &kp N9        &kp SQT        &trans
 &trans  &kp EXCL   &kp AT       &kp HASH         &kp DLLR   &kp LPAR          &kp RPAR         &kp N4     &kp N5     &kp NUMBER_6  &kp N0         &trans
 &trans  &kp TILDE  &kp KP_PLUS  &kp KP_MINUS     &kp EQUAL  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp N1     &kp N2     &kp N3        &kp BACKSLASH  &trans
                                 &trans           &trans     &trans            &kp KP_N1        &kp KP_N2  &kp KP_N3
@@ -44,10 +44,10 @@
 
         narrow_layer {
             bindings = <
-&none   &none  &none  &none          &none         &kp PIPE          &kp F1    &kp F2    &kp F3  &kp F4     &kp F5   &none
-&trans  &none  &none  &kp LC(CARET)  &kp CAPSLOCK  &kp UNDERSCORE    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp F11  &trans
-&trans  &none  &none  &none          &kp DELETE    &kp GRAVE         &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &trans
-                      &trans         &trans        &trans            &trans    &trans    &trans
+&none   &kp F12  &kp F13  &kp F14  &kp LC(CARET)  &kp PIPE          &kp F1    &kp F2    &kp F3  &kp F4     &kp F5   &none
+&trans  &kp F15  &kp F16  &kp F17  &kp CAPSLOCK   &kp UNDERSCORE    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp F11  &trans
+&trans  &kp F18  &kp F19  &kp F20  &kp DELETE     &kp GRAVE         &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &trans
+                          &trans   &trans         &trans            &trans    &trans    &trans
             >;
         };
 
